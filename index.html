@@ -11,7 +11,7 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
 
 /* ── TOPBAR ── */
 #topbar{background:#7a1515;color:#fff;padding:10px 18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;position:sticky;top:0;z-index:50}
-#topbar h1{font-family:'Cinzel',serif;font-size:13px;letter-spacing:1.5px;flex:1;min-width:180px}
+#topbar h1{font-family:'Cinzel',serif;font-size:20px;letter-spacing:1.5px;flex:1;min-width:180px}
 #topbar select,#topbar input[type=number]{font-size:12px;padding:5px 8px;border:none;border-radius:4px;font-family:'Lato',sans-serif;background:#fff;color:#333}
 .btn{padding:6px 14px;border:1.5px solid rgba(255,255,255,.6);border-radius:4px;background:transparent;color:#fff;font-size:12px;cursor:pointer;font-weight:700;font-family:'Lato',sans-serif;white-space:nowrap}
 .btn:hover{background:rgba(255,255,255,.18)}
@@ -21,12 +21,12 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
 #save-status{font-size:11px;opacity:.8;font-style:italic;min-width:140px}
 
 /* ── ABAS ── */
-#tabs{display:flex;background:#5a0f0f;padding:0 18px}
+#tabs{display:flex;background:#5a0f0f;padding:0 18px;position:fixed;top:48px;left:0;right:0;z-index:49}
 .tab{padding:9px 18px;font-size:11px;font-family:'Cinzel',serif;letter-spacing:1px;color:rgba(255,255,255,.6);cursor:pointer;border-bottom:3px solid transparent;transition:all .15s}
 .tab.active,.tab:hover{color:#fff;border-bottom-color:#f5c842}
 
 /* ── PAINEL CADASTRO ── */
-#content{padding:14px 16px;max-width:980px;margin:0 auto}
+#content{padding:14px 16px;padding-top:92px;max-width:980px;margin:0 auto}
 .panel{background:#fff;border-radius:6px;padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.1)}
 .panel h2{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:#7a1515;margin-bottom:10px;text-transform:uppercase;border-bottom:1px solid #f0e8e0;padding-bottom:7px}
 .coral-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
@@ -48,13 +48,13 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
 /* cabeçalho do documento */
 .dh{text-align:center;margin-bottom:10px}
 .dh-line-top{height:3px;background:linear-gradient(90deg,transparent,#7a1515 15%,#7a1515 85%,transparent);margin-bottom:8px}
-.dh h2{font-family:'Cinzel',serif;font-size:17px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a}
-.dh-mes{font-family:'Cinzel',serif;font-size:11px;color:#7a1515;letter-spacing:3px;margin-top:2px}
+.dh h2{font-family:'Cinzel',serif;font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a1a1a}
+.dh-mes{font-family:'Cinzel',serif;font-size:14px;color:#7a1515;letter-spacing:3px;margin-top:2px}
 .dh-center{text-align:center;flex:1}
-.dh-par{font-family:'Cinzel',serif;font-size:10px;color:#444;letter-spacing:2px;text-transform:uppercase;margin-top:3px;font-weight:600}
-.dh-cidade{font-size:9px;color:#888;margin-top:1px;letter-spacing:1.5px}
-.dh-diocese{font-size:8px;color:#aaa;margin-top:1px;font-style:italic}
-.dh-ano{font-family:'IM Fell English',serif;font-style:italic;font-size:9px;color:#bbb;margin-top:1px}
+.dh-par{font-family:'Cinzel',serif;font-size:12px;color:#444;letter-spacing:2px;text-transform:uppercase;margin-top:3px;font-weight:600}
+.dh-cidade{font-size:11px;color:#888;margin-top:1px;letter-spacing:1.5px}
+.dh-diocese{font-size:10px;color:#aaa;margin-top:1px;font-style:italic}
+.dh-ano{font-family:'IM Fell English',serif;font-style:italic;font-size:11px;color:#bbb;margin-top:1px}
 /* pauta gregoriana decorativa */
 .pauta{display:flex;align-items:center;margin:6px 0 0;gap:0}
 .pauta-linha{flex:1;height:1px;background:#c8b89a}
@@ -68,11 +68,11 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
 .wh{padding:5px 14px;text-align:center;position:relative;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .wh-n{position:absolute;top:50%;transform:translateY(-50%);font-size:18px;opacity:.5;font-family:'IM Fell English',serif;pointer-events:none;line-height:1}
 .wh-n.l{left:10px}.wh-n.r{right:10px}
-.wh-txt{font-family:'Cinzel',serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;line-height:1.2}
+.wh-txt{font-family:'Cinzel',serif;font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;line-height:1.2}
 .wh-sub{display:none}
 .brasoes{display:flex;align-items:center;justify-content:center;gap:14px;margin:4px 0 2px}
-.brasao-img{height:76px;width:auto;object-fit:contain}
-.brasao-vat{height:68px;width:auto;object-fit:contain}
+.brasao-img{height:120px;width:auto;object-fit:contain}
+.brasao-vat{height:104px;width:auto;object-fit:contain}
 /* tabela */
 .hr{display:grid;grid-template-columns:92px 66px 1fr;background:#f5f0e6;border-top:.5px solid #e0d5c5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .hc{padding:3px 8px;font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#a09080;border-right:.5px solid #ddd}
@@ -135,7 +135,7 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
   .xbtn{display:none!important}
   .wb{break-inside:avoid;margin-bottom:5px!important}
   .wh{padding:4px 10px!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
-  .wh-txt{font-size:9px!important;letter-spacing:1px!important}
+  .wh-txt{font-size:12px!important;letter-spacing:1px!important}
   .hr{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
   .hc{padding:2px 6px!important;font-size:7px!important}
   .ce{padding:3px 6px!important}
@@ -143,9 +143,9 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
   .mr{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
   .dh{margin-bottom:6px!important}
   .brasoes{margin:2px 0!important}
-  .brasao-img{height:60px!important}
-  .brasao-vat{height:54px!important}
-  .dh h2{font-size:14px!important}
+  .brasao-img{height:94px!important}
+  .brasao-vat{height:82px!important}
+  .dh h2{font-size:19px!important}
   .df{margin-top:6px!important}
   .df-txt{font-family:'IM Fell English',serif;font-style:italic;font-size:22px;color:#7a1515;line-height:1.3}
   .pauta{margin:3px 0!important}
@@ -157,7 +157,7 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
 <body>
 
 <div id="topbar">
-  <h1>✛ Escala de Corais · Paróquia São José</h1>
+   <h1>𝄞 Escala de Corais · Paróquia São José</h1>
   <select id="sm"></select>
   <input type="number" id="sa" value="2026" min="2025" max="2027" style="width:72px">
   <button class="btn" onclick="renderEscala()">▸ Gerar</button>
@@ -204,107 +204,7 @@ body{font-family:'Lato',sans-serif;background:#e8e4dc;min-height:100vh}
         Elas aparecerão automaticamente na escala quando você gerar o mês correspondente.
         As seleções ficam salvas automaticamente.
       </p>
-      <div id="festas-container">
-<h3 style="font-family:Cinzel,serif;font-size:11px;color:#7a1515;letter-spacing:2px;text-transform:uppercase;margin:14px 0 8px;padding-bottom:5px;border-bottom:1px solid #eee">2026</h3>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:8px;margin-bottom:6px">
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-01-01" value="2026-01-01" onchange="toggleFesta('2026-01-01',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-01-01" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santa Maria, Mãe de Deus</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 01/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-01-04" value="2026-01-04" onchange="toggleFesta('2026-01-04',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-01-04" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Epifania do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 04/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-01-11" value="2026-01-11" onchange="toggleFesta('2026-01-11',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-01-11" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Baptismo do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 11/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-02-02" value="2026-02-02" onchange="toggleFesta('2026-02-02',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-02-02" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Apresentação do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 02/02</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-03-19" value="2026-03-19" onchange="toggleFesta('2026-03-19',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-03-19" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São José, esposo da Virgem Santa Maria</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 19/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-03-25" value="2026-03-25" onchange="toggleFesta('2026-03-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-03-25" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Anunciação do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 25/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-06" value="2026-04-06" onchange="toggleFesta('2026-04-06',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-06" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Segunda-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 06/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-07" value="2026-04-07" onchange="toggleFesta('2026-04-07',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-07" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Terça-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 07/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-08" value="2026-04-08" onchange="toggleFesta('2026-04-08',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-08" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Quarta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 08/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-09" value="2026-04-09" onchange="toggleFesta('2026-04-09',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-09" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Quinta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 09/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-10" value="2026-04-10" onchange="toggleFesta('2026-04-10',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-10" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sexta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 10/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-11" value="2026-04-11" onchange="toggleFesta('2026-04-11',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-11" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sábado na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 11/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-04-25" value="2026-04-25" onchange="toggleFesta('2026-04-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-04-25" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Marcos, evangelista</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 25/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-05-14" value="2026-05-14" onchange="toggleFesta('2026-05-14',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-05-14" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Matias, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 14/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-05-17" value="2026-05-17" onchange="toggleFesta('2026-05-17',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-05-17" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Ascensão do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 17/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-05-24" value="2026-05-24" onchange="toggleFesta('2026-05-24',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-05-24" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Domingo de Pentecostes</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 24/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-05-31" value="2026-05-31" onchange="toggleFesta('2026-05-31',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-05-31" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santíssima Trindade</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 31/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-06-04" value="2026-06-04" onchange="toggleFesta('2026-06-04',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-06-04" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Corpus Christi</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 04/06</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-06-12" value="2026-06-12" onchange="toggleFesta('2026-06-12',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-06-12" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sagrado Coração de Jesus</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 12/06</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-06-24" value="2026-06-24" onchange="toggleFesta('2026-06-24',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-06-24" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nascimento de São João Batista</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 24/06</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-07-03" value="2026-07-03" onchange="toggleFesta('2026-07-03',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-07-03" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Tomé, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 03/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-07-05" value="2026-07-05" onchange="toggleFesta('2026-07-05',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-07-05" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Pedro e Paulo, apóstolos</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 05/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-07-16" value="2026-07-16" onchange="toggleFesta('2026-07-16',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-07-16" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nossa Senhora do Carmo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 16/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-07-22" value="2026-07-22" onchange="toggleFesta('2026-07-22',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-07-22" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santa Maria Madalena</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 22/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-07-25" value="2026-07-25" onchange="toggleFesta('2026-07-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-07-25" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Tiago, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 25/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-08-06" value="2026-08-06" onchange="toggleFesta('2026-08-06',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-08-06" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Transfiguração do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 06/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-08-10" value="2026-08-10" onchange="toggleFesta('2026-08-10',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-08-10" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Lourenço, diácono e mártir</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 10/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-08-16" value="2026-08-16" onchange="toggleFesta('2026-08-16',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-08-16" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Assunção da Nossa Senhora</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 16/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-08-24" value="2026-08-24" onchange="toggleFesta('2026-08-24',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-08-24" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Bartolomeu, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 24/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-09-08" value="2026-09-08" onchange="toggleFesta('2026-09-08',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-09-08" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Natividade da Virgem Santa Maria</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 08/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-09-14" value="2026-09-14" onchange="toggleFesta('2026-09-14',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-09-14" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Exaltação da Santa Cruz</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 14/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-09-21" value="2026-09-21" onchange="toggleFesta('2026-09-21',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-09-21" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Mateus, apóstolo e evangelista</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 21/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-09-29" value="2026-09-29" onchange="toggleFesta('2026-09-29',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-09-29" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Miguel, Gabriel e Rafael, Arcanjos</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 29/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-10-12" value="2026-10-12" onchange="toggleFesta('2026-10-12',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-10-12" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nossa Senhora da Conceição Aparecida</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 12/10</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-10-28" value="2026-10-28" onchange="toggleFesta('2026-10-28',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-10-28" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Simão e Judas Tadeu, apóstolos</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 28/10</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-11-01" value="2026-11-01" onchange="toggleFesta('2026-11-01',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-11-01" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Todos os Santos</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 01/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-11-09" value="2026-11-09" onchange="toggleFesta('2026-11-09',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-11-09" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Dedicação da Basílica de Latrão</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 09/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-11-22" value="2026-11-22" onchange="toggleFesta('2026-11-22',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-11-22" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nosso Senhor Jesus Cristo, Rei do Universo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 22/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-11-30" value="2026-11-30" onchange="toggleFesta('2026-11-30',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-11-30" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santo André, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 30/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-08" value="2026-12-08" onchange="toggleFesta('2026-12-08',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-08" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Imaculada Conceição de Nossa Senhora</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 08/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-12" value="2026-12-12" onchange="toggleFesta('2026-12-12',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-12" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nossa Senhora de Guadalupe</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 12/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-25" value="2026-12-25" onchange="toggleFesta('2026-12-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-25" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Natal do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 25/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-26" value="2026-12-26" onchange="toggleFesta('2026-12-26',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-26" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santo Estêvão, primeiro mártir</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 26/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-27" value="2026-12-27" onchange="toggleFesta('2026-12-27',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-27" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sagrada Familia de Jesus, Maria e José</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 27/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2026-12-28" value="2026-12-28" onchange="toggleFesta('2026-12-28',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2026-12-28" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Inocentes, mártires</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 28/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-</div>
-<h3 style="font-family:Cinzel,serif;font-size:11px;color:#7a1515;letter-spacing:2px;text-transform:uppercase;margin:14px 0 8px;padding-bottom:5px;border-bottom:1px solid #eee">2027</h3>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:8px;margin-bottom:6px">
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-01-01" value="2027-01-01" onchange="toggleFesta('2027-01-01',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-01-01" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santa Maria, Mãe de Deus</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 01/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-01-03" value="2027-01-03" onchange="toggleFesta('2027-01-03',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-01-03" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Epifania do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 03/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-01-10" value="2027-01-10" onchange="toggleFesta('2027-01-10',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-01-10" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Baptismo do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 10/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-01-25" value="2027-01-25" onchange="toggleFesta('2027-01-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-01-25" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Conversão de São Paulo, apóstolo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 25/01</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-02-02" value="2027-02-02" onchange="toggleFesta('2027-02-02',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-02-02" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Apresentação do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 02/02</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-02-22" value="2027-02-22" onchange="toggleFesta('2027-02-22',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-02-22" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Cadeira de São Pedro, apóstolo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 22/02</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-03-19" value="2027-03-19" onchange="toggleFesta('2027-03-19',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-03-19" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São José, esposo da Virgem Santa Maria</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 19/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-03-29" value="2027-03-29" onchange="toggleFesta('2027-03-29',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-03-29" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Segunda-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 29/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-03-30" value="2027-03-30" onchange="toggleFesta('2027-03-30',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-03-30" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Terça-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 30/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-03-31" value="2027-03-31" onchange="toggleFesta('2027-03-31',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-03-31" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Quarta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 31/03</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-04-01" value="2027-04-01" onchange="toggleFesta('2027-04-01',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-04-01" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Quinta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 01/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-04-02" value="2027-04-02" onchange="toggleFesta('2027-04-02',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-04-02" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sexta-Feira na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 02/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-04-03" value="2027-04-03" onchange="toggleFesta('2027-04-03',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-04-03" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sábado na Oitava da Páscoa</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 03/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-04-05" value="2027-04-05" onchange="toggleFesta('2027-04-05',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-04-05" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Anunciação do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 05/04</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-03" value="2027-05-03" onchange="toggleFesta('2027-05-03',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-03" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Filipe e Tiago, apóstolos</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 03/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-09" value="2027-05-09" onchange="toggleFesta('2027-05-09',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-09" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Ascensão do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 09/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-14" value="2027-05-14" onchange="toggleFesta('2027-05-14',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-14" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Matias, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 14/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-16" value="2027-05-16" onchange="toggleFesta('2027-05-16',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-16" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Domingo de Pentecostes</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 16/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-23" value="2027-05-23" onchange="toggleFesta('2027-05-23',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-23" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santíssima Trindade</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 23/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-27" value="2027-05-27" onchange="toggleFesta('2027-05-27',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-27" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Corpus Christi</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 27/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-05-31" value="2027-05-31" onchange="toggleFesta('2027-05-31',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-05-31" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Visitação da Nossa Senhora</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 31/05</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-06-04" value="2027-06-04" onchange="toggleFesta('2027-06-04',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-06-04" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sagrado Coração de Jesus</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 04/06</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-06-24" value="2027-06-24" onchange="toggleFesta('2027-06-24',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-06-24" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nascimento de São João Batista</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 24/06</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-07-03" value="2027-07-03" onchange="toggleFesta('2027-07-03',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-07-03" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Tomé, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 03/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-07-04" value="2027-07-04" onchange="toggleFesta('2027-07-04',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-07-04" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Pedro e Paulo, apóstolos</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 04/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-07-16" value="2027-07-16" onchange="toggleFesta('2027-07-16',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-07-16" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nossa Senhora do Carmo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 16/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-07-22" value="2027-07-22" onchange="toggleFesta('2027-07-22',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-07-22" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santa Maria Madalena</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 22/07</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-08-06" value="2027-08-06" onchange="toggleFesta('2027-08-06',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-08-06" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Transfiguração do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qui, 06/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-08-10" value="2027-08-10" onchange="toggleFesta('2027-08-10',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-08-10" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Lourenço, diácono e mártir</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 10/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-08-15" value="2027-08-15" onchange="toggleFesta('2027-08-15',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-08-15" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Assunção da Nossa Senhora</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 15/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-08-23" value="2027-08-23" onchange="toggleFesta('2027-08-23',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-08-23" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santa Rosa de Lima, virgem</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 23/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-08-24" value="2027-08-24" onchange="toggleFesta('2027-08-24',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-08-24" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Bartolomeu, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 24/08</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-09-08" value="2027-09-08" onchange="toggleFesta('2027-09-08',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-09-08" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Natividade da Virgem Santa Maria</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 08/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-09-14" value="2027-09-14" onchange="toggleFesta('2027-09-14',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-09-14" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Exaltação da Santa Cruz</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 14/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-09-21" value="2027-09-21" onchange="toggleFesta('2027-09-21',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-09-21" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Mateus, apóstolo e evangelista</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 21/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-09-29" value="2027-09-29" onchange="toggleFesta('2027-09-29',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-09-29" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Miguel, Gabriel e Rafael, Arcanjos</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 29/09</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-10-12" value="2027-10-12" onchange="toggleFesta('2027-10-12',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-10-12" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nossa Senhora da Conceição Aparecida</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 12/10</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-10-18" value="2027-10-18" onchange="toggleFesta('2027-10-18',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-10-18" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São Lucas, evangelista</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 18/10</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-10-28" value="2027-10-28" onchange="toggleFesta('2027-10-28',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-10-28" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Simão e Judas Tadeu, apóstolos</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Qua, 28/10</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-11-07" value="2027-11-07" onchange="toggleFesta('2027-11-07',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-11-07" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Todos os Santos</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 07/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-11-09" value="2027-11-09" onchange="toggleFesta('2027-11-09',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-11-09" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Dedicação da Basílica de Latrão</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 09/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-11-21" value="2027-11-21" onchange="toggleFesta('2027-11-21',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-11-21" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Nosso Senhor Jesus Cristo, Rei do Universo</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 21/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-11-30" value="2027-11-30" onchange="toggleFesta('2027-11-30',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-11-30" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santo André, apóstolo</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 30/11</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-12-08" value="2027-12-08" onchange="toggleFesta('2027-12-08',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-12-08" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Imaculada Conceição de Nossa Senhora</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Ter, 08/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-12-25" value="2027-12-25" onchange="toggleFesta('2027-12-25',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-12-25" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Natal do Senhor</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sex, 25/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Solenidade · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-12-26" value="2027-12-26" onchange="toggleFesta('2027-12-26',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-12-26" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Sagrada Familia de Jesus, Maria e José</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Sáb, 26/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#f5f0e8;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-12-27" value="2027-12-27" onchange="toggleFesta('2027-12-27',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-12-27" style="color:#5a3800;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">São João, apóstolo e evangelista</label><span style="color:#5a3800;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Dom, 27/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Branco – Solenidade/Festa</div></div>
-<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd"><div style="background:#c42020;padding:8px 12px;display:flex;align-items:center;gap:8px"><input type="checkbox" id="f_2027-12-28" value="2027-12-28" onchange="toggleFesta('2027-12-28',this.checked)" style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0"><label for="f_2027-12-28" style="color:#fff;font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">Santos Inocentes, mártires</label><span style="color:#fff;font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">Seg, 28/12</span></div><div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">Festa · Vermelho – Apóstolos/Mártires</div></div>
-</div>
-</div>
+       <div id="festas-container"></div>
     </div>
   </div>
 </div>
@@ -371,111 +271,114 @@ const CORES={
 };
 
 // ── CALENDÁRIO LITÚRGICO ────────────────────────────────────────────────────
+// Chave = sábado (data de referência para getLit). Nome = domingo seguinte.
+// Numerais arábicos extraídos dos ICS do GCatholic (2026-2027).
+// Ajuste diocesano: Santos Pedro e Paulo transferido para o domingo anterior.
 const CAL={
-  '2026-01-03':{c:'#f5f0e8',n:'Epifania do Senhor'},
-  '2026-01-10':{c:'#f5f0e8',n:'Batismo do Senhor'},
-  '2026-01-17':{c:'#2e6e2e',n:'2º Domingo do Tempo Comum'},
-  '2026-01-24':{c:'#2e6e2e',n:'3º Domingo do Tempo Comum'},
-  '2026-01-31':{c:'#2e6e2e',n:'4º Domingo do Tempo Comum'},
-  '2026-02-07':{c:'#2e6e2e',n:'5º Domingo do Tempo Comum'},
-  '2026-02-14':{c:'#2e6e2e',n:'6º Domingo do Tempo Comum'},
-  '2026-02-21':{c:'#5c3585',n:'1º Domingo da Quaresma'},
-  '2026-02-28':{c:'#5c3585',n:'2º Domingo da Quaresma'},
-  '2026-03-07':{c:'#5c3585',n:'3º Domingo da Quaresma'},
-  '2026-03-14':{c:'#5c3585',n:'4º Domingo da Quaresma'},
-  '2026-03-21':{c:'#5c3585',n:'5º Domingo da Quaresma'},
-  '2026-03-28':{c:'#c42020',n:'Domingo de Ramos e da Paixão do Senhor'},
-  '2026-04-04':{c:'#f5f0e8',n:'Domingo de Páscoa da Ressurreição do Senhor'},
-  '2026-04-11':{c:'#f5f0e8',n:'2º Domingo da Páscoa ou da Divina Misericórdia'},
-  '2026-04-18':{c:'#f5f0e8',n:'3º Domingo da Páscoa'},
-  '2026-04-25':{c:'#f5f0e8',n:'4º Domingo da Páscoa'},
-  '2026-05-02':{c:'#f5f0e8',n:'5º Domingo da Páscoa'},
-  '2026-05-09':{c:'#f5f0e8',n:'6º Domingo da Páscoa'},
-  '2026-05-16':{c:'#f5f0e8',n:'Ascensão do Senhor'},
-  '2026-05-23':{c:'#c42020',n:'Domingo de Pentecostes'},
-  '2026-05-30':{c:'#f5f0e8',n:'Santíssima Trindade'},
-  '2026-06-06':{c:'#2e6e2e',n:'10º Domingo do Tempo Comum'},
-  '2026-06-13':{c:'#2e6e2e',n:'11º Domingo do Tempo Comum'},
-  '2026-06-20':{c:'#2e6e2e',n:'12º Domingo do Tempo Comum'},
-  '2026-06-27':{c:'#c42020',n:'Santos Pedro e Paulo, apóstolos'},
-  '2026-07-04':{c:'#2e6e2e',n:'14º Domingo do Tempo Comum'},
-  '2026-07-11':{c:'#2e6e2e',n:'15º Domingo do Tempo Comum'},
-  '2026-07-18':{c:'#2e6e2e',n:'16º Domingo do Tempo Comum'},
-  '2026-07-25':{c:'#2e6e2e',n:'17º Domingo do Tempo Comum'},
-  '2026-08-01':{c:'#2e6e2e',n:'18º Domingo do Tempo Comum'},
-  '2026-08-08':{c:'#2e6e2e',n:'19º Domingo do Tempo Comum'},
-  '2026-08-15':{c:'#f5f0e8',n:'Assunção da Nossa Senhora'},
-  '2026-08-22':{c:'#2e6e2e',n:'21º Domingo do Tempo Comum'},
-  '2026-08-29':{c:'#2e6e2e',n:'22º Domingo do Tempo Comum'},
-  '2026-09-05':{c:'#2e6e2e',n:'23º Domingo do Tempo Comum'},
-  '2026-09-12':{c:'#2e6e2e',n:'24º Domingo do Tempo Comum'},
-  '2026-09-19':{c:'#2e6e2e',n:'25º Domingo do Tempo Comum'},
-  '2026-09-26':{c:'#2e6e2e',n:'26º Domingo do Tempo Comum'},
-  '2026-10-03':{c:'#2e6e2e',n:'27º Domingo do Tempo Comum'},
-  '2026-10-10':{c:'#2e6e2e',n:'28º Domingo do Tempo Comum'},
-  '2026-10-17':{c:'#2e6e2e',n:'29º Domingo do Tempo Comum'},
-  '2026-10-24':{c:'#2e6e2e',n:'30º Domingo do Tempo Comum'},
-  '2026-10-31':{c:'#f5f0e8',n:'Todos os Santos'},
-  '2026-11-07':{c:'#2e6e2e',n:'32º Domingo do Tempo Comum'},
-  '2026-11-14':{c:'#2e6e2e',n:'33º Domingo do Tempo Comum'},
-  '2026-11-21':{c:'#f5f0e8',n:'Nosso Senhor Jesus Cristo, Rei do Universo'},
-  '2026-11-28':{c:'#5c3585',n:'1º Domingo do Advento'},
-  '2026-12-05':{c:'#5c3585',n:'2º Domingo do Advento'},
-  '2026-12-12':{c:'#5c3585',n:'3º Domingo do Advento'},
-  '2026-12-19':{c:'#5c3585',n:'4º Domingo do Advento'},
-  '2026-12-26':{c:'#f5f0e8',n:'Sagrada Familia de Jesus, Maria e José'},
-  '2027-01-02':{c:'#f5f0e8',n:'Epifania do Senhor'},
-  '2027-01-09':{c:'#f5f0e8',n:'Batismo do Senhor'},
-  '2027-01-16':{c:'#2e6e2e',n:'2º Domingo do Tempo Comum'},
-  '2027-01-23':{c:'#2e6e2e',n:'3º Domingo do Tempo Comum'},
-  '2027-01-30':{c:'#2e6e2e',n:'4º Domingo do Tempo Comum'},
-  '2027-02-06':{c:'#2e6e2e',n:'5º Domingo do Tempo Comum'},
-  '2027-02-13':{c:'#5c3585',n:'1º Domingo da Quaresma'},
-  '2027-02-20':{c:'#5c3585',n:'2º Domingo da Quaresma'},
-  '2027-02-27':{c:'#5c3585',n:'3º Domingo da Quaresma'},
-  '2027-03-06':{c:'#5c3585',n:'4º Domingo da Quaresma'},
-  '2027-03-13':{c:'#5c3585',n:'5º Domingo da Quaresma'},
-  '2027-03-20':{c:'#c42020',n:'Domingo de Ramos e da Paixão do Senhor'},
-  '2027-03-27':{c:'#f5f0e8',n:'Domingo de Páscoa da Ressurreição do Senhor'},
-  '2027-04-03':{c:'#f5f0e8',n:'2º Domingo da Páscoa ou da Divina Misericórdia'},
-  '2027-04-10':{c:'#f5f0e8',n:'3º Domingo da Páscoa'},
-  '2027-04-17':{c:'#f5f0e8',n:'4º Domingo da Páscoa'},
-  '2027-04-24':{c:'#f5f0e8',n:'5º Domingo da Páscoa'},
-  '2027-05-01':{c:'#f5f0e8',n:'6º Domingo da Páscoa'},
-  '2027-05-08':{c:'#f5f0e8',n:'Ascensão do Senhor'},
-  '2027-05-15':{c:'#c42020',n:'Domingo de Pentecostes'},
-  '2027-05-22':{c:'#f5f0e8',n:'Santíssima Trindade'},
-  '2027-05-29':{c:'#2e6e2e',n:'9º Domingo do Tempo Comum'},
-  '2027-06-05':{c:'#2e6e2e',n:'10º Domingo do Tempo Comum'},
-  '2027-06-12':{c:'#2e6e2e',n:'11º Domingo do Tempo Comum'},
-  '2027-06-19':{c:'#2e6e2e',n:'12º Domingo do Tempo Comum'},
-  '2027-06-26':{c:'#2e6e2e',n:'13º Domingo do Tempo Comum'},
-  '2027-07-03':{c:'#c42020',n:'Santos Pedro e Paulo, apóstolos'},
-  '2027-07-10':{c:'#2e6e2e',n:'15º Domingo do Tempo Comum'},
-  '2027-07-17':{c:'#2e6e2e',n:'16º Domingo do Tempo Comum'},
-  '2027-07-24':{c:'#2e6e2e',n:'17º Domingo do Tempo Comum'},
-  '2027-07-31':{c:'#2e6e2e',n:'18º Domingo do Tempo Comum'},
-  '2027-08-07':{c:'#2e6e2e',n:'19º Domingo do Tempo Comum'},
-  '2027-08-14':{c:'#f5f0e8',n:'Assunção da Nossa Senhora'},
-  '2027-08-21':{c:'#2e6e2e',n:'21º Domingo do Tempo Comum'},
-  '2027-08-28':{c:'#2e6e2e',n:'22º Domingo do Tempo Comum'},
-  '2027-09-04':{c:'#2e6e2e',n:'23º Domingo do Tempo Comum'},
-  '2027-09-11':{c:'#2e6e2e',n:'24º Domingo do Tempo Comum'},
-  '2027-09-18':{c:'#2e6e2e',n:'25º Domingo do Tempo Comum'},
-  '2027-09-25':{c:'#2e6e2e',n:'26º Domingo do Tempo Comum'},
-  '2027-10-02':{c:'#2e6e2e',n:'27º Domingo do Tempo Comum'},
-  '2027-10-09':{c:'#2e6e2e',n:'28º Domingo do Tempo Comum'},
-  '2027-10-16':{c:'#2e6e2e',n:'29º Domingo do Tempo Comum'},
-  '2027-10-23':{c:'#2e6e2e',n:'30º Domingo do Tempo Comum'},
-  '2027-10-30':{c:'#2e6e2e',n:'31º Domingo do Tempo Comum'},
-  '2027-11-06':{c:'#f5f0e8',n:'Todos os Santos'},
-  '2027-11-13':{c:'#2e6e2e',n:'33º Domingo do Tempo Comum'},
-  '2027-11-20':{c:'#f5f0e8',n:'Nosso Senhor Jesus Cristo, Rei do Universo'},
-  '2027-11-27':{c:'#5c3585',n:'1º Domingo do Advento'},
-  '2027-12-04':{c:'#5c3585',n:'2º Domingo do Advento'},
-  '2027-12-11':{c:'#5c3585',n:'3º Domingo do Advento'},
-  '2027-12-18':{c:'#5c3585',n:'4º Domingo do Advento'},
-  '2027-12-25':{c:'#f5f0e8',n:'Sagrada Familia de Jesus, Maria e José'},
+  "2026-01-03":{c:"#f5f0e8",n:"Epifania do Senhor"},
+  "2026-01-10":{c:"#f5f0e8",n:"Baptismo do Senhor"},
+  "2026-01-17":{c:"#2e6e2e",n:"2º Domingo do Tempo Comum"},
+  "2026-01-24":{c:"#2e6e2e",n:"3º Domingo do Tempo Comum"},
+  "2026-01-31":{c:"#2e6e2e",n:"4º Domingo do Tempo Comum"},
+  "2026-02-07":{c:"#2e6e2e",n:"5º Domingo do Tempo Comum"},
+  "2026-02-14":{c:"#2e6e2e",n:"6º Domingo do Tempo Comum"},
+  "2026-02-21":{c:"#5c3585",n:"1º Domingo da Quaresma"},
+  "2026-02-28":{c:"#5c3585",n:"2º Domingo da Quaresma"},
+  "2026-03-07":{c:"#5c3585",n:"3º Domingo da Quaresma"},
+  "2026-03-14":{c:"#5c3585",n:"4º Domingo da Quaresma"},
+  "2026-03-21":{c:"#5c3585",n:"5º Domingo da Quaresma"},
+  "2026-03-28":{c:"#c42020",n:"Domingo de Ramos e da Paixão do Senhor"},
+  "2026-04-04":{c:"#f5f0e8",n:"Domingo de Páscoa da Ressurreição do Senhor"},
+  "2026-04-11":{c:"#f5f0e8",n:"2º Domingo da Páscoa ou da Divina Misericórdia"},
+  "2026-04-18":{c:"#f5f0e8",n:"3º Domingo da Páscoa"},
+  "2026-04-25":{c:"#f5f0e8",n:"4º Domingo da Páscoa"},
+  "2026-05-02":{c:"#f5f0e8",n:"5º Domingo da Páscoa"},
+  "2026-05-09":{c:"#f5f0e8",n:"6º Domingo da Páscoa"},
+  "2026-05-16":{c:"#f5f0e8",n:"Ascensão do Senhor"},
+  "2026-05-23":{c:"#c42020",n:"Domingo de Pentecostes"},
+  "2026-05-30":{c:"#f5f0e8",n:"Santíssima Trindade"},
+  "2026-06-06":{c:"#2e6e2e",n:"10º Domingo do Tempo Comum"},
+  "2026-06-13":{c:"#2e6e2e",n:"11º Domingo do Tempo Comum"},
+  "2026-06-20":{c:"#2e6e2e",n:"12º Domingo do Tempo Comum"},
+  "2026-06-27":{c:"#c42020",n:"Santos Pedro e Paulo, apóstolos"},
+  "2026-07-04":{c:"#2e6e2e",n:"14º Domingo do Tempo Comum"},
+  "2026-07-11":{c:"#2e6e2e",n:"15º Domingo do Tempo Comum"},
+  "2026-07-18":{c:"#2e6e2e",n:"16º Domingo do Tempo Comum"},
+  "2026-07-25":{c:"#2e6e2e",n:"17º Domingo do Tempo Comum"},
+  "2026-08-01":{c:"#2e6e2e",n:"18º Domingo do Tempo Comum"},
+  "2026-08-08":{c:"#2e6e2e",n:"19º Domingo do Tempo Comum"},
+  "2026-08-15":{c:"#2e6e2e",n:"20º Domingo do Tempo Comum"},
+  "2026-08-22":{c:"#2e6e2e",n:"21º Domingo do Tempo Comum"},
+  "2026-08-29":{c:"#2e6e2e",n:"22º Domingo do Tempo Comum"},
+  "2026-09-05":{c:"#2e6e2e",n:"23º Domingo do Tempo Comum"},
+  "2026-09-12":{c:"#2e6e2e",n:"24º Domingo do Tempo Comum"},
+  "2026-09-19":{c:"#2e6e2e",n:"25º Domingo do Tempo Comum"},
+  "2026-09-26":{c:"#2e6e2e",n:"26º Domingo do Tempo Comum"},
+  "2026-10-03":{c:"#2e6e2e",n:"27º Domingo do Tempo Comum"},
+  "2026-10-10":{c:"#2e6e2e",n:"28º Domingo do Tempo Comum"},
+  "2026-10-17":{c:"#2e6e2e",n:"29º Domingo do Tempo Comum"},
+  "2026-10-24":{c:"#2e6e2e",n:"30º Domingo do Tempo Comum"},
+  "2026-10-31":{c:"#f5f0e8",n:"Todos os Santos"},
+  "2026-11-07":{c:"#2e6e2e",n:"32º Domingo do Tempo Comum"},
+  "2026-11-14":{c:"#2e6e2e",n:"33º Domingo do Tempo Comum"},
+  "2026-11-21":{c:"#f5f0e8",n:"Nosso Senhor Jesus Cristo, Rei do Universo"},
+  "2026-11-28":{c:"#5c3585",n:"1º Domingo do Advento"},
+  "2026-12-05":{c:"#5c3585",n:"2º Domingo do Advento"},
+  "2026-12-12":{c:"#5c3585",n:"3º Domingo do Advento"},
+  "2026-12-19":{c:"#5c3585",n:"4º Domingo do Advento"},
+  "2026-12-26":{c:"#f5f0e8",n:"Sagrada Familia de Jesus, Maria e José"},
+  "2027-01-02":{c:"#f5f0e8",n:"Epifania do Senhor"},
+  "2027-01-09":{c:"#f5f0e8",n:"Baptismo do Senhor"},
+  "2027-01-16":{c:"#2e6e2e",n:"2º Domingo do Tempo Comum"},
+  "2027-01-23":{c:"#2e6e2e",n:"3º Domingo do Tempo Comum"},
+  "2027-01-30":{c:"#2e6e2e",n:"4º Domingo do Tempo Comum"},
+  "2027-02-06":{c:"#2e6e2e",n:"5º Domingo do Tempo Comum"},
+  "2027-02-13":{c:"#5c3585",n:"1º Domingo da Quaresma"},
+  "2027-02-20":{c:"#5c3585",n:"2º Domingo da Quaresma"},
+  "2027-02-27":{c:"#5c3585",n:"3º Domingo da Quaresma"},
+  "2027-03-06":{c:"#5c3585",n:"4º Domingo da Quaresma"},
+  "2027-03-13":{c:"#5c3585",n:"5º Domingo da Quaresma"},
+  "2027-03-20":{c:"#c42020",n:"Domingo de Ramos e da Paixão do Senhor"},
+  "2027-03-27":{c:"#f5f0e8",n:"Domingo de Páscoa da Ressurreição do Senhor"},
+  "2027-04-03":{c:"#f5f0e8",n:"2º Domingo da Páscoa ou da Divina Misericórdia"},
+  "2027-04-10":{c:"#f5f0e8",n:"3º Domingo da Páscoa"},
+  "2027-04-17":{c:"#f5f0e8",n:"4º Domingo da Páscoa"},
+  "2027-04-24":{c:"#f5f0e8",n:"5º Domingo da Páscoa"},
+  "2027-05-01":{c:"#f5f0e8",n:"6º Domingo da Páscoa"},
+  "2027-05-08":{c:"#f5f0e8",n:"Ascensão do Senhor"},
+  "2027-05-15":{c:"#c42020",n:"Domingo de Pentecostes"},
+  "2027-05-22":{c:"#f5f0e8",n:"Santíssima Trindade"},
+  "2027-05-29":{c:"#2e6e2e",n:"9º Domingo do Tempo Comum"},
+  "2027-06-05":{c:"#2e6e2e",n:"10º Domingo do Tempo Comum"},
+  "2027-06-12":{c:"#2e6e2e",n:"11º Domingo do Tempo Comum"},
+  "2027-06-19":{c:"#2e6e2e",n:"12º Domingo do Tempo Comum"},
+  "2027-06-26":{c:"#c42020",n:"Santos Pedro e Paulo, apóstolos"},
+  "2027-07-03":{c:"#2e6e2e",n:"14º Domingo do Tempo Comum"},
+  "2027-07-10":{c:"#2e6e2e",n:"15º Domingo do Tempo Comum"},
+  "2027-07-17":{c:"#2e6e2e",n:"16º Domingo do Tempo Comum"},
+  "2027-07-24":{c:"#2e6e2e",n:"17º Domingo do Tempo Comum"},
+  "2027-07-31":{c:"#2e6e2e",n:"18º Domingo do Tempo Comum"},
+  "2027-08-07":{c:"#2e6e2e",n:"19º Domingo do Tempo Comum"},
+  "2027-08-14":{c:"#f5f0e8",n:"Assunção da Virgem Santa Maria"},
+  "2027-08-21":{c:"#2e6e2e",n:"21º Domingo do Tempo Comum"},
+  "2027-08-28":{c:"#2e6e2e",n:"22º Domingo do Tempo Comum"},
+  "2027-09-04":{c:"#2e6e2e",n:"23º Domingo do Tempo Comum"},
+  "2027-09-11":{c:"#2e6e2e",n:"24º Domingo do Tempo Comum"},
+  "2027-09-18":{c:"#2e6e2e",n:"25º Domingo do Tempo Comum"},
+  "2027-09-25":{c:"#2e6e2e",n:"26º Domingo do Tempo Comum"},
+  "2027-10-02":{c:"#2e6e2e",n:"27º Domingo do Tempo Comum"},
+  "2027-10-09":{c:"#2e6e2e",n:"28º Domingo do Tempo Comum"},
+  "2027-10-16":{c:"#2e6e2e",n:"29º Domingo do Tempo Comum"},
+  "2027-10-23":{c:"#2e6e2e",n:"30º Domingo do Tempo Comum"},
+  "2027-10-30":{c:"#2e6e2e",n:"31º Domingo do Tempo Comum"},
+  "2027-11-06":{c:"#2e6e2e",n:"32º Domingo do Tempo Comum"},
+  "2027-11-13":{c:"#2e6e2e",n:"33º Domingo do Tempo Comum"},
+  "2027-11-20":{c:"#f5f0e8",n:"Nosso Senhor Jesus Cristo, Rei do Universo"},
+  "2027-11-27":{c:"#5c3585",n:"1º Domingo do Advento"},
+  "2027-12-04":{c:"#5c3585",n:"2º Domingo do Advento"},
+  "2027-12-11":{c:"#5c3585",n:"3º Domingo do Advento"},
+  "2027-12-18":{c:"#5c3585",n:"4º Domingo do Advento"},
+  "2027-12-25":{c:"#f5f0e8",n:"Sagrada Familia de Jesus, Maria e José"},
 };
 // ── CORAIS ─────────────────────────────────────────────────────────────────
 const CORAIS_PADRAO = [
@@ -955,7 +858,9 @@ function renderEscala(){
 function limpar(){
   document.querySelectorAll('#preview input[data-id]').forEach(i=>i.value='');
   localStorage.removeItem('escala_cells');
-  mostrarStatus('Escala limpa');
+  localStorage.removeItem('festas_ativas');
+  renderFestas();
+  mostrarStatus('Escala e festas limpas');
 }
 
 function mostrarStatus(msg){
@@ -966,101 +871,99 @@ function mostrarStatus(msg){
 
 // ── FESTAS E SOLENIDADES ───────────────────────────────────────────────────
 
-// Todas as festas feriais disponíveis (extraídas do CAL)
+// Todas as festas feriais disponíveis — extraídas dos arquivos ICS do GCatholic
+// Apenas Solenidades [S] e Festas [F] do Calendário Romano Geral (2026-2027)
+// Com ajuste diocesano: Santos Pedro e Paulo transferido para o domingo anterior
 const FESTAS_BASE = [
-  {data:'2026-01-01',cor:'#f5f0e8',rank:'S',nome:'Santa Maria, Mãe de Deus'},
-  {data:'2026-01-04',cor:'#f5f0e8',rank:'S',nome:'Epifania do Senhor'},
-  {data:'2026-01-11',cor:'#f5f0e8',rank:'F',nome:'Baptismo do Senhor'},
-  {data:'2026-02-02',cor:'#f5f0e8',rank:'F',nome:'Apresentação do Senhor'},
-  {data:'2026-03-19',cor:'#f5f0e8',rank:'S',nome:'São José, esposo da Virgem Santa Maria'},
-  {data:'2026-03-25',cor:'#f5f0e8',rank:'S',nome:'Anunciação do Senhor'},
-  {data:'2026-04-06',cor:'#f5f0e8',rank:'S',nome:'Segunda-Feira na Oitava da Páscoa'},
-  {data:'2026-04-07',cor:'#f5f0e8',rank:'S',nome:'Terça-Feira na Oitava da Páscoa'},
-  {data:'2026-04-08',cor:'#f5f0e8',rank:'S',nome:'Quarta-Feira na Oitava da Páscoa'},
-  {data:'2026-04-09',cor:'#f5f0e8',rank:'S',nome:'Quinta-Feira na Oitava da Páscoa'},
-  {data:'2026-04-10',cor:'#f5f0e8',rank:'S',nome:'Sexta-Feira na Oitava da Páscoa'},
-  {data:'2026-04-11',cor:'#f5f0e8',rank:'S',nome:'Sábado na Oitava da Páscoa'},
-  {data:'2026-04-25',cor:'#c42020',rank:'F',nome:'São Marcos, evangelista'},
-  {data:'2026-05-14',cor:'#c42020',rank:'F',nome:'São Matias, apóstolo'},
-  {data:'2026-05-17',cor:'#f5f0e8',rank:'S',nome:'Ascensão do Senhor'},
-  {data:'2026-05-24',cor:'#c42020',rank:'S',nome:'Domingo de Pentecostes'},
-  {data:'2026-05-31',cor:'#f5f0e8',rank:'S',nome:'Santíssima Trindade'},
-  {data:'2026-06-04',cor:'#f5f0e8',rank:'S',nome:'Corpus Christi'},
-  {data:'2026-06-12',cor:'#f5f0e8',rank:'S',nome:'Sagrado Coração de Jesus'},
-  {data:'2026-06-24',cor:'#f5f0e8',rank:'S',nome:'Nascimento de São João Batista'},
-  {data:'2026-07-03',cor:'#c42020',rank:'F',nome:'São Tomé, apóstolo'},
-  {data:'2026-07-05',cor:'#c42020',rank:'S',nome:'Santos Pedro e Paulo, apóstolos'},
-  {data:'2026-07-16',cor:'#f5f0e8',rank:'F',nome:'Nossa Senhora do Carmo'},
-  {data:'2026-07-22',cor:'#f5f0e8',rank:'F',nome:'Santa Maria Madalena'},
-  {data:'2026-07-25',cor:'#c42020',rank:'F',nome:'São Tiago, apóstolo'},
-  {data:'2026-08-06',cor:'#f5f0e8',rank:'F',nome:'Transfiguração do Senhor'},
-  {data:'2026-08-10',cor:'#c42020',rank:'F',nome:'São Lourenço, diácono e mártir'},
-  {data:'2026-08-16',cor:'#f5f0e8',rank:'S',nome:'Assunção da Nossa Senhora'},
-  {data:'2026-08-24',cor:'#c42020',rank:'F',nome:'São Bartolomeu, apóstolo'},
-  {data:'2026-09-08',cor:'#f5f0e8',rank:'F',nome:'Natividade da Virgem Santa Maria'},
-  {data:'2026-09-14',cor:'#c42020',rank:'F',nome:'Exaltação da Santa Cruz'},
-  {data:'2026-09-21',cor:'#c42020',rank:'F',nome:'São Mateus, apóstolo e evangelista'},
-  {data:'2026-09-29',cor:'#f5f0e8',rank:'F',nome:'Santos Miguel, Gabriel e Rafael, Arcanjos'},
-  {data:'2026-10-12',cor:'#f5f0e8',rank:'S',nome:'Nossa Senhora da Conceição Aparecida'},
-  {data:'2026-10-28',cor:'#c42020',rank:'F',nome:'Santos Simão e Judas Tadeu, apóstolos'},
-  {data:'2026-11-01',cor:'#f5f0e8',rank:'S',nome:'Todos os Santos'},
-  {data:'2026-11-09',cor:'#f5f0e8',rank:'F',nome:'Dedicação da Basílica de Latrão'},
-  {data:'2026-11-22',cor:'#f5f0e8',rank:'S',nome:'Nosso Senhor Jesus Cristo, Rei do Universo'},
-  {data:'2026-11-30',cor:'#c42020',rank:'F',nome:'Santo André, apóstolo'},
-  {data:'2026-12-08',cor:'#f5f0e8',rank:'S',nome:'Imaculada Conceição de Nossa Senhora'},
-  {data:'2026-12-12',cor:'#f5f0e8',rank:'F',nome:'Nossa Senhora de Guadalupe'},
-  {data:'2026-12-25',cor:'#f5f0e8',rank:'S',nome:'Natal do Senhor'},
-  {data:'2026-12-26',cor:'#c42020',rank:'F',nome:'Santo Estêvão, primeiro mártir'},
-  {data:'2026-12-27',cor:'#f5f0e8',rank:'F',nome:'Sagrada Familia de Jesus, Maria e José'},
-  {data:'2026-12-28',cor:'#c42020',rank:'F',nome:'Santos Inocentes, mártires'},
-  {data:'2027-01-01',cor:'#f5f0e8',rank:'S',nome:'Santa Maria, Mãe de Deus'},
-  {data:'2027-01-03',cor:'#f5f0e8',rank:'S',nome:'Epifania do Senhor'},
-  {data:'2027-01-10',cor:'#f5f0e8',rank:'F',nome:'Baptismo do Senhor'},
-  {data:'2027-01-25',cor:'#f5f0e8',rank:'F',nome:'Conversão de São Paulo, apóstolo'},
-  {data:'2027-02-02',cor:'#f5f0e8',rank:'F',nome:'Apresentação do Senhor'},
-  {data:'2027-02-22',cor:'#f5f0e8',rank:'F',nome:'Cadeira de São Pedro, apóstolo'},
-  {data:'2027-03-19',cor:'#f5f0e8',rank:'S',nome:'São José, esposo da Virgem Santa Maria'},
-  {data:'2027-03-29',cor:'#f5f0e8',rank:'S',nome:'Segunda-Feira na Oitava da Páscoa'},
-  {data:'2027-03-30',cor:'#f5f0e8',rank:'S',nome:'Terça-Feira na Oitava da Páscoa'},
-  {data:'2027-03-31',cor:'#f5f0e8',rank:'S',nome:'Quarta-Feira na Oitava da Páscoa'},
-  {data:'2027-04-01',cor:'#f5f0e8',rank:'S',nome:'Quinta-Feira na Oitava da Páscoa'},
-  {data:'2027-04-02',cor:'#f5f0e8',rank:'S',nome:'Sexta-Feira na Oitava da Páscoa'},
-  {data:'2027-04-03',cor:'#f5f0e8',rank:'S',nome:'Sábado na Oitava da Páscoa'},
-  {data:'2027-04-05',cor:'#f5f0e8',rank:'S',nome:'Anunciação do Senhor'},
-  {data:'2027-05-03',cor:'#c42020',rank:'F',nome:'Santos Filipe e Tiago, apóstolos'},
-  {data:'2027-05-09',cor:'#f5f0e8',rank:'S',nome:'Ascensão do Senhor'},
-  {data:'2027-05-14',cor:'#c42020',rank:'F',nome:'São Matias, apóstolo'},
-  {data:'2027-05-16',cor:'#c42020',rank:'S',nome:'Domingo de Pentecostes'},
-  {data:'2027-05-23',cor:'#f5f0e8',rank:'S',nome:'Santíssima Trindade'},
-  {data:'2027-05-27',cor:'#f5f0e8',rank:'S',nome:'Corpus Christi'},
-  {data:'2027-05-31',cor:'#f5f0e8',rank:'F',nome:'Visitação da Nossa Senhora'},
-  {data:'2027-06-04',cor:'#f5f0e8',rank:'S',nome:'Sagrado Coração de Jesus'},
-  {data:'2027-06-24',cor:'#f5f0e8',rank:'S',nome:'Nascimento de São João Batista'},
-  {data:'2027-07-03',cor:'#c42020',rank:'F',nome:'São Tomé, apóstolo'},
-  {data:'2027-07-04',cor:'#c42020',rank:'S',nome:'Santos Pedro e Paulo, apóstolos'},
-  {data:'2027-07-16',cor:'#f5f0e8',rank:'F',nome:'Nossa Senhora do Carmo'},
-  {data:'2027-07-22',cor:'#f5f0e8',rank:'F',nome:'Santa Maria Madalena'},
-  {data:'2027-08-06',cor:'#f5f0e8',rank:'F',nome:'Transfiguração do Senhor'},
-  {data:'2027-08-10',cor:'#c42020',rank:'F',nome:'São Lourenço, diácono e mártir'},
-  {data:'2027-08-15',cor:'#f5f0e8',rank:'S',nome:'Assunção da Nossa Senhora'},
-  {data:'2027-08-23',cor:'#f5f0e8',rank:'F',nome:'Santa Rosa de Lima, virgem'},
-  {data:'2027-08-24',cor:'#c42020',rank:'F',nome:'São Bartolomeu, apóstolo'},
-  {data:'2027-09-08',cor:'#f5f0e8',rank:'F',nome:'Natividade da Virgem Santa Maria'},
-  {data:'2027-09-14',cor:'#c42020',rank:'F',nome:'Exaltação da Santa Cruz'},
-  {data:'2027-09-21',cor:'#c42020',rank:'F',nome:'São Mateus, apóstolo e evangelista'},
-  {data:'2027-09-29',cor:'#f5f0e8',rank:'F',nome:'Santos Miguel, Gabriel e Rafael, Arcanjos'},
-  {data:'2027-10-12',cor:'#f5f0e8',rank:'S',nome:'Nossa Senhora da Conceição Aparecida'},
-  {data:'2027-10-18',cor:'#c42020',rank:'F',nome:'São Lucas, evangelista'},
-  {data:'2027-10-28',cor:'#c42020',rank:'F',nome:'Santos Simão e Judas Tadeu, apóstolos'},
-  {data:'2027-11-07',cor:'#f5f0e8',rank:'S',nome:'Todos os Santos'},
-  {data:'2027-11-09',cor:'#f5f0e8',rank:'F',nome:'Dedicação da Basílica de Latrão'},
-  {data:'2027-11-21',cor:'#f5f0e8',rank:'S',nome:'Nosso Senhor Jesus Cristo, Rei do Universo'},
-  {data:'2027-11-30',cor:'#c42020',rank:'F',nome:'Santo André, apóstolo'},
-  {data:'2027-12-08',cor:'#f5f0e8',rank:'S',nome:'Imaculada Conceição de Nossa Senhora'},
-  {data:'2027-12-25',cor:'#f5f0e8',rank:'S',nome:'Natal do Senhor'},
-  {data:'2027-12-26',cor:'#f5f0e8',rank:'F',nome:'Sagrada Familia de Jesus, Maria e José'},
-  {data:'2027-12-27',cor:'#f5f0e8',rank:'F',nome:'São João, apóstolo e evangelista'},
-  {data:'2027-12-28',cor:'#c42020',rank:'F',nome:'Santos Inocentes, mártires'},
+  {data:"2026-01-01",cor:"#f5f0e8",rank:"S",nome:"Santa Maria, Mãe de Deus"},
+  {data:"2026-01-04",cor:"#f5f0e8",rank:"S",nome:"Epifania do Senhor"},
+  {data:"2026-01-11",cor:"#f5f0e8",rank:"F",nome:"Baptismo do Senhor"},
+  {data:"2026-02-02",cor:"#f5f0e8",rank:"F",nome:"Apresentação do Senhor"},
+  {data:"2026-02-18",cor:"#5c3585",rank:"Q",nome:"Quarta-feira de Cinzas"},
+  {data:"2026-03-19",cor:"#f5f0e8",rank:"S",nome:"São José, esposo da Virgem Santa Maria"},
+  {data:"2026-03-25",cor:"#f5f0e8",rank:"S",nome:"Anunciação do Senhor"},
+  {data:"2026-04-06",cor:"#f5f0e8",rank:"S",nome:"Segunda-Feira na Oitava da Páscoa"},
+  {data:"2026-04-07",cor:"#f5f0e8",rank:"S",nome:"Terça-Feira na Oitava da Páscoa"},
+  {data:"2026-04-08",cor:"#f5f0e8",rank:"S",nome:"Quarta-Feira na Oitava da Páscoa"},
+  {data:"2026-04-09",cor:"#f5f0e8",rank:"S",nome:"Quinta-Feira na Oitava da Páscoa"},
+  {data:"2026-04-10",cor:"#f5f0e8",rank:"S",nome:"Sexta-Feira na Oitava da Páscoa"},
+  {data:"2026-04-11",cor:"#f5f0e8",rank:"S",nome:"Sábado na Oitava da Páscoa"},
+  {data:"2026-04-25",cor:"#c42020",rank:"F",nome:"São Marcos, evangelista"},
+  {data:"2026-05-14",cor:"#c42020",rank:"F",nome:"São Matias, apóstolo"},
+  {data:"2026-05-17",cor:"#f5f0e8",rank:"S",nome:"Ascensão do Senhor"},
+  {data:"2026-05-24",cor:"#c42020",rank:"S",nome:"Domingo de Pentecostes"},
+  {data:"2026-05-31",cor:"#f5f0e8",rank:"S",nome:"Santíssima Trindade"},
+  {data:"2026-06-04",cor:"#f5f0e8",rank:"S",nome:"Santíssimo Corpo e Sangue de Cristo"},
+  {data:"2026-06-12",cor:"#f5f0e8",rank:"S",nome:"Sagrado Coração de Jesus"},
+  {data:"2026-06-24",cor:"#f5f0e8",rank:"S",nome:"Nascimento de São João Batista"},
+  {data:"2026-06-28",cor:"#c42020",rank:"S",nome:"Santos Pedro e Paulo, apóstolos"},
+  {data:"2026-07-03",cor:"#c42020",rank:"F",nome:"São Tomé, apóstolo"},
+  {data:"2026-07-22",cor:"#f5f0e8",rank:"F",nome:"Santa Maria Madalena"},
+  {data:"2026-07-25",cor:"#c42020",rank:"F",nome:"São Tiago, apóstolo"},
+  {data:"2026-08-06",cor:"#f5f0e8",rank:"F",nome:"Transfiguração do Senhor"},
+  {data:"2026-08-10",cor:"#c42020",rank:"F",nome:"São Lourenço, diácono e mártir"},
+  {data:"2026-08-15",cor:"#f5f0e8",rank:"S",nome:"Assunção da Virgem Santa Maria"},
+  {data:"2026-08-24",cor:"#c42020",rank:"F",nome:"São Bartolomeu, apóstolo"},
+  {data:"2026-09-08",cor:"#f5f0e8",rank:"F",nome:"Natividade da Virgem Santa Maria"},
+  {data:"2026-09-14",cor:"#c42020",rank:"F",nome:"Exaltação da Santa Cruz"},
+  {data:"2026-09-21",cor:"#c42020",rank:"F",nome:"São Mateus, apóstolo e evangelista"},
+  {data:"2026-09-29",cor:"#f5f0e8",rank:"F",nome:"Santos Miguel, Gabriel e Rafael, Arcanjos"},
+  {data:"2026-10-28",cor:"#c42020",rank:"F",nome:"Santos Simão e Judas, apóstolos"},
+  {data:"2026-11-01",cor:"#f5f0e8",rank:"S",nome:"Todos os Santos"},
+  {data:"2026-11-09",cor:"#f5f0e8",rank:"F",nome:"Dedicação da Basílica de Latrão"},
+  {data:"2026-11-22",cor:"#f5f0e8",rank:"S",nome:"Nosso Senhor Jesus Cristo, Rei do Universo"},
+  {data:"2026-11-30",cor:"#c42020",rank:"F",nome:"Santo André, apóstolo"},
+  {data:"2026-12-08",cor:"#f5f0e8",rank:"S",nome:"Imaculada Conceição da Virgem Santa Maria"},
+  {data:"2026-12-25",cor:"#f5f0e8",rank:"S",nome:"Natal do Senhor"},
+  {data:"2026-12-26",cor:"#c42020",rank:"F",nome:"Santo Estêvão, primeiro mártir"},
+  {data:"2026-12-27",cor:"#f5f0e8",rank:"F",nome:"Sagrada Familia de Jesus, Maria e José"},
+  {data:"2026-12-28",cor:"#c42020",rank:"F",nome:"Santos Inocentes, mártires"},
+  {data:"2027-01-01",cor:"#f5f0e8",rank:"S",nome:"Santa Maria, Mãe de Deus"},
+  {data:"2027-01-03",cor:"#f5f0e8",rank:"S",nome:"Epifania do Senhor"},
+  {data:"2027-01-10",cor:"#f5f0e8",rank:"F",nome:"Baptismo do Senhor"},
+  {data:"2027-01-25",cor:"#f5f0e8",rank:"F",nome:"Conversão de São Paulo, apóstolo"},
+  {data:"2027-02-02",cor:"#f5f0e8",rank:"F",nome:"Apresentação do Senhor"},
+  {data:"2027-02-10",cor:"#5c3585",rank:"Q",nome:"Quarta-feira de Cinzas"},
+  {data:"2027-02-22",cor:"#f5f0e8",rank:"F",nome:"Cadeira de São Pedro, apóstolo"},
+  {data:"2027-03-19",cor:"#f5f0e8",rank:"S",nome:"São José, esposo da Virgem Santa Maria"},
+  {data:"2027-03-29",cor:"#f5f0e8",rank:"S",nome:"Segunda-Feira na Oitava da Páscoa"},
+  {data:"2027-03-30",cor:"#f5f0e8",rank:"S",nome:"Terça-Feira na Oitava da Páscoa"},
+  {data:"2027-03-31",cor:"#f5f0e8",rank:"S",nome:"Quarta-Feira na Oitava da Páscoa"},
+  {data:"2027-04-01",cor:"#f5f0e8",rank:"S",nome:"Quinta-Feira na Oitava da Páscoa"},
+  {data:"2027-04-02",cor:"#f5f0e8",rank:"S",nome:"Sexta-Feira na Oitava da Páscoa"},
+  {data:"2027-04-03",cor:"#f5f0e8",rank:"S",nome:"Sábado na Oitava da Páscoa"},
+  {data:"2027-04-05",cor:"#f5f0e8",rank:"S",nome:"Anunciação do Senhor"},
+  {data:"2027-05-03",cor:"#c42020",rank:"F",nome:"Santos Filipe e Tiago, apóstolos"},
+  {data:"2027-05-09",cor:"#f5f0e8",rank:"S",nome:"Ascensão do Senhor"},
+  {data:"2027-05-14",cor:"#c42020",rank:"F",nome:"São Matias, apóstolo"},
+  {data:"2027-05-16",cor:"#c42020",rank:"S",nome:"Domingo de Pentecostes"},
+  {data:"2027-05-23",cor:"#f5f0e8",rank:"S",nome:"Santíssima Trindade"},
+  {data:"2027-05-27",cor:"#f5f0e8",rank:"S",nome:"Santíssimo Corpo e Sangue de Cristo"},
+  {data:"2027-05-31",cor:"#f5f0e8",rank:"F",nome:"Visitação da Nossa Senhora"},
+  {data:"2027-06-04",cor:"#f5f0e8",rank:"S",nome:"Sagrado Coração de Jesus"},
+  {data:"2027-06-24",cor:"#f5f0e8",rank:"S",nome:"Nascimento de São João Batista"},
+  {data:"2027-06-27",cor:"#c42020",rank:"S",nome:"Santos Pedro e Paulo, apóstolos"},
+  {data:"2027-07-03",cor:"#c42020",rank:"F",nome:"São Tomé, apóstolo"},
+  {data:"2027-07-22",cor:"#f5f0e8",rank:"F",nome:"Santa Maria Madalena"},
+  {data:"2027-08-06",cor:"#f5f0e8",rank:"F",nome:"Transfiguração do Senhor"},
+  {data:"2027-08-10",cor:"#c42020",rank:"F",nome:"São Lourenço, diácono e mártir"},
+  {data:"2027-08-15",cor:"#f5f0e8",rank:"S",nome:"Assunção da Virgem Santa Maria"},
+  {data:"2027-08-24",cor:"#c42020",rank:"F",nome:"São Bartolomeu, apóstolo"},
+  {data:"2027-09-08",cor:"#f5f0e8",rank:"F",nome:"Natividade da Virgem Santa Maria"},
+  {data:"2027-09-14",cor:"#c42020",rank:"F",nome:"Exaltação da Santa Cruz"},
+  {data:"2027-09-21",cor:"#c42020",rank:"F",nome:"São Mateus, apóstolo e evangelista"},
+  {data:"2027-09-29",cor:"#f5f0e8",rank:"F",nome:"Santos Miguel, Gabriel e Rafael, Arcanjos"},
+  {data:"2027-10-18",cor:"#c42020",rank:"F",nome:"São Lucas, evangelista"},
+  {data:"2027-10-28",cor:"#c42020",rank:"F",nome:"Santos Simão e Judas, apóstolos"},
+  {data:"2027-11-01",cor:"#f5f0e8",rank:"S",nome:"Todos os Santos"},
+  {data:"2027-11-09",cor:"#f5f0e8",rank:"F",nome:"Dedicação da Basílica de Latrão"},
+  {data:"2027-11-21",cor:"#f5f0e8",rank:"S",nome:"Nosso Senhor Jesus Cristo, Rei do Universo"},
+  {data:"2027-11-30",cor:"#c42020",rank:"F",nome:"Santo André, apóstolo"},
+  {data:"2027-12-08",cor:"#f5f0e8",rank:"S",nome:"Imaculada Conceição da Virgem Santa Maria"},
+  {data:"2027-12-25",cor:"#f5f0e8",rank:"S",nome:"Natal do Senhor"},
+  {data:"2027-12-26",cor:"#f5f0e8",rank:"F",nome:"Sagrada Familia de Jesus, Maria e José"},
+  {data:"2027-12-27",cor:"#f5f0e8",rank:"F",nome:"São João, apóstolo e evangelista"},
+  {data:"2027-12-28",cor:"#c42020",rank:"F",nome:"Santos Inocentes, mártires"},
 ];
 
 // Festas ativas (selecionadas pelo usuário) — salvas no localStorage
@@ -1085,12 +988,70 @@ function getFestasAtivas(mes, ano){
 }
 
 function renderFestas(){
-  // Restaurar checkboxes conforme seleções salvas
+  const container = document.getElementById('festas-container');
+  if (!container) return;
   const ativas = carregarFestasAtivas();
-  FESTAS_BASE.forEach(f=>{
-    const cb = document.getElementById('f_'+f.data);
-    if(cb) cb.checked = ativas.includes(f.data);
+  const DIA = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+  const ds = n => DIA[n];
+
+  // Anos disponiveis nos dados
+  const anosDisp = [...new Set(FESTAS_BASE.map(f=>f.data.substring(0,4)))].sort();
+  const agora = new Date();
+  const anoAtual = agora.getFullYear();
+  const mesAtual = agora.getMonth();
+
+  const selAno = document.getElementById('festas-sel-ano');
+  const selMes = document.getElementById('festas-sel-mes');
+  const ano = selAno ? parseInt(selAno.value) : (anosDisp.includes(String(anoAtual)) ? anoAtual : parseInt(anosDisp[0]));
+  const mes = selMes ? parseInt(selMes.value) : mesAtual;
+
+  // Filtra festas do mes/ano selecionado
+  const festasMes = FESTAS_BASE.filter(f=>{
+    const d = new Date(f.data+'T12:00:00');
+    return d.getFullYear()===ano && d.getMonth()===mes;
   });
+
+  let h = `<div style="display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap">
+    <label style="font-size:11px;font-weight:700;color:#999">Mês:</label>
+    <select id="festas-sel-mes" onchange="renderFestas()" style="font-size:12px;padding:5px 8px;border:1px solid #ddd;border-radius:4px;font-family:Lato,sans-serif">
+      ${MN.map((m,i)=>`<option value="${i}" ${i===mes?'selected':''}>${m}</option>`).join('')}
+    </select>
+    <select id="festas-sel-ano" onchange="renderFestas()" style="font-size:12px;padding:5px 8px;border:1px solid #ddd;border-radius:4px;font-family:Lato,sans-serif">
+      ${anosDisp.map(y=>`<option ${parseInt(y)===ano?'selected':''}>${y}</option>`).join('')}
+    </select>
+    <span style="font-size:11px;color:#aaa">${festasMes.length} festa(s) neste mês</span>
+  </div>`;
+
+  if(festasMes.length===0){
+    h+=`<p style="font-size:12px;color:#aaa;text-align:center;padding:20px">Nenhuma festa ou solenidade neste mês.</p>`;
+  } else {
+    h+=`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:8px;margin-bottom:6px">`;
+    festasMes.forEach(f=>{
+      const d = new Date(f.data+'T12:00:00');
+      const diaSem = ds(d.getDay());
+      const dia = String(d.getDate()).padStart(2,'0');
+      const m = String(d.getMonth()+1).padStart(2,'0');
+      const checked = ativas.includes(f.data) ? ' checked' : '';
+      const isRed = f.cor === '#c42020';
+      const isPurple = f.cor === '#5c3585';
+      const isWhite = f.cor === '#f5f0e8';
+      const bg = (isRed||isPurple) ? f.cor : '#f5f0e8';
+      const txtColor = (isRed||isPurple) ? '#fff' : '#5a3800';
+      const rankLabel = f.rank==='S'?'Solenidade':f.rank==='F'?'Festa':f.rank==='Q'?'Início da Quaresma':f.rank;
+      const tipoLabel = isRed ? 'Apóstolos/Mártires' : isPurple ? 'Tempo da Quaresma' : 'Solenidade/Festa';
+      h+=`<div style="border-radius:5px;overflow:hidden;border:1px solid #ddd">
+        <div style="background:${bg};padding:8px 12px;display:flex;align-items:center;gap:8px">
+          <input type="checkbox" id="f_${f.data}" value="${f.data}" onchange="toggleFesta('${f.data}',this.checked)"${checked} style="width:15px;height:15px;cursor:pointer;flex-shrink:0;margin:0">
+          <label for="f_${f.data}" style="color:${txtColor};font-size:12px;font-weight:700;cursor:pointer;flex:1;line-height:1.3;margin:0">${f.nome}</label>
+          <span style="color:${txtColor};font-size:10px;opacity:.8;white-space:nowrap;flex-shrink:0">${diaSem}, ${dia}/${m}</span>
+        </div>
+        <div style="padding:4px 12px 6px;background:#fafafa;font-size:10px;color:#aaa;font-style:italic">${rankLabel} · ${isRed?'Vermelho':'Branco'} – ${tipoLabel}</div>
+      </div>`;
+    });
+    h+=`</div>`;
+  }
+
+  container.innerHTML = h;
 }
 
 function toggleFesta(data, ativo){
